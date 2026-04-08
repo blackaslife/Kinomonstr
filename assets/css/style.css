@@ -367,6 +367,7 @@ td img {
   width: 100%;        /* додай це */
   max-width: 900px;
   margin: 20px auto;  /* відступ зверху і центрування */
+  order: 1;
 }
 
 .content {
@@ -379,6 +380,7 @@ td img {
   float: none;
   width: auto;
   /* прибери grid-column і grid-row — не потрібні */
+  order: 2;
 }
 /* style for Matrix */
 
