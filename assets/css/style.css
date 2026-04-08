@@ -62,7 +62,7 @@ ul li {
 	min-width: 900px;
 }
 
-.main, .logo, .menubar, .site_content, .footer {
+.main, .logo, .menubar, .site_content, .footer, .container {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -128,12 +128,12 @@ hr {
 	background-color: white;
 }
 .sidebar_container {
-	float: right;
-	width: 224px;
+	float: none;
+	width: auto;
 }
 .sidebar {
-	float: right;
-	width: 222px;
+	/* float: right; */
+	/* width: 222px; */
 	padding: 5%;
 	margin: 0 0 16px 0;
 	border: solid 1px #f2f2f2;
@@ -171,9 +171,9 @@ hr {
 
 .content {
 	text-align: left;
-	width: 620px;
+	width: auto;
 	padding: 0 0 0 5px;
-	float: left;
+	float: none;
 }
 
 .content a {
@@ -342,6 +342,48 @@ td img {
 .rating {
 	font-weight: bold;
 }
+
+.video_wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* grid */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;  /* простіше: 2 колонки замість 3 */
+  gap: 20px;
+  align-items: start;
+  width: 100%;        /* додай це */
+  max-width: 900px;
+  margin: 20px auto;  /* відступ зверху і центрування */
+}
+
+.content {
+  float: none;
+  width: auto;
+  /* прибери grid-column і grid-row — не потрібні */
+}
+
+.sidebar_container {
+  float: none;
+  width: auto;
+  /* прибери grid-column і grid-row — не потрібні */
+}
+/* style for Matrix */
+
+/* style for footer */
+
 
 .footer {
 	width: 100%;
