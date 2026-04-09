@@ -59,7 +59,7 @@ ul li {
 	font-size: 0.8em;
 	margin-left: 0px;
 	margin-right: 0px;
-	min-width: 900px;
+	width: 100%;
 }
 
 .main, .logo, .menubar, .site_content, .footer, .container {
@@ -68,7 +68,7 @@ ul li {
 }
 
 .logo {
-	width: 880px;
+	/* width: 880px; */
 	padding-bottom: 40px;
 }
 .logo h1, .logo h2 {
@@ -90,7 +90,7 @@ ul li {
 }
 
 .menubar {
-	width: 900px;
+	max-width: 900px;
 	height: 46px;
 }
 ul.menu {
@@ -210,7 +210,7 @@ hr {
 }
 
 .description_film {
-	margin-bottom: 15%;
+	margin-bottom: 27%;
 }
 
 .description_film img {
@@ -254,8 +254,9 @@ hr {
 }
 
 .send textarea {
-	width: 624px;
+	width: 98%;
 	height: 200px;
+	padding: 8px;
 }
 
 .send input[type="submit"] {
@@ -396,7 +397,7 @@ td img {
 	color: #a8aa94;
 	margin-left: 0px;
 	margin-right: 0px;
-	min-width: 900px;
+	/* min-width: 900px; */
 }
 
 .footer a {
