@@ -209,15 +209,24 @@ hr {
 	margin-right: 3%;
 }
 
-.description_film {
+/* .description_film {
 	margin-bottom: 27%;
-}
+} */
+
+
 
 .description_film img {
 	float: left;
 	margin-right: 2%;
 	border-radius: 5px;
 	border: solid 5px #dad7d5;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin-bottom: 3%;
 }
 
 .reviews {
