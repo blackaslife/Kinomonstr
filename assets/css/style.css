@@ -400,7 +400,22 @@ td img {
   /* прибери grid-column і grid-row — не потрібні */
   order: 2;
 }
-/* style for Matrix */
+/* style for serial */
+
+h3 {
+	font: normal 110% 'century gothic', arial;
+}
+
+.serial_content {
+	display: grid;
+	grid-template-rows: auto;
+	/* grid-template-columns: auto 100px; */
+	gap:15px;
+}
+
+.serial_content_header {
+	grid-column: 1/-1;
+}
 
 /* style for footer */
 
