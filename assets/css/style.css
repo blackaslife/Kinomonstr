@@ -11,7 +11,7 @@ body {
 
 p {
 	padding: 0 0 20px 0;
-	line-height: 1.7em;
+	line-height: 1.6em;
 }
 
 input[type=text], input[type=password], input[type=search] {
@@ -407,14 +407,24 @@ h3 {
 }
 
 .serial_content {
-	display: grid;
-	grid-template-rows: auto;
-	/* grid-template-columns: auto 100px; */
-	gap:15px;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .serial_content_header {
-	grid-column: 1/-1;
+	
+}
+
+.walking_dead, .silicon_valley, .breaking_bad, .the_xfiles {
+	display: flex;
+	flex-direction: row;
+
+	margin-bottom: 20px;
+}
+
+.serial_description {
+	padding-left: 20px;
 }
 
 /* style for footer */
