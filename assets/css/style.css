@@ -308,20 +308,6 @@ hr {
 	border-radius: 5px;
 }
 
-.info_film {
-	margin-bottom: 5%;
-	background-color: #f9f9f9;
-	padding: 5%;
-	height: 270px;
-}
-
-.info_film img {
-	float: left;
-	margin-right: 2%;
-	border-radius: 5px;
-	border: solid 5px #dad7d5;
-	width: 25%;
-}
 
 .button {
 	background-color: #7268ad;
@@ -426,6 +412,31 @@ h3 {
 .serial_description {
 	padding-left: 20px;
 }
+
+/* style for films */
+
+.films_content {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.info_film {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5%;
+
+
+	
+}
+
+.info_film img {
+	float: left;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+}
+
 
 /* style for footer */
 
