@@ -398,15 +398,16 @@ h3 {
 
 }
 
-.serial_content_header {
-	
-}
-
 .walking_dead, .silicon_valley, .breaking_bad, .the_xfiles {
 	display: flex;
 	flex-direction: row;
 
 	margin-bottom: 20px;
+}
+
+.serial_content_img {
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
 }
 
 .serial_description {
