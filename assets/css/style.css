@@ -442,16 +442,30 @@ h3 {
 
 .movie_rating {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: min-content auto auto auto;
 	grid-template-rows: auto auto auto auto auto;
-	gap: 10px;
+	gap: 5px;
 	margin-top: 10px;
+	
 }
 .rating_element {
-	border: solid 3px #f5f6;
+	border: solid 2px #f4f4f4;
 	border-radius: 3px;
 	padding: 20px;
-	background-color: green;
+}
+
+.rating_element_header {
+	grid-column: span 2;
+}
+
+.rating_element_header, .rating_element_year, .rating_element_imdb {
+	border: none;
+}
+
+.rating_img {
+	display: block;
+	width: 60px;
+	object-fit: cover;
 }
 /* style for footer */
 
