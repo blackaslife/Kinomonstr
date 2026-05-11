@@ -437,7 +437,10 @@ h3 {
 	border-radius: 5px;
 	border: solid 5px #dad7d5;
 }
-
+/* style for slider */
+.slider {
+	display: none;
+}
 /* style for movie rating */
 
 .movie_rating {
