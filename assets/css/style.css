@@ -426,21 +426,23 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 5%;
-
+	gap: 20px;
+	
 
 	
 }
 
-.info_film img {
-	float: left;
-	margin-right: 2%;
+.info-img {
 	border-radius: 5px;
 	border: solid 5px #dad7d5;
 }
+
 /* style for slider */
+
 .slider {
 	display: none;
 }
+
 /* style for movie rating */
 
 .movie_rating {
