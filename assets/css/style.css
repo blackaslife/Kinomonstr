@@ -459,6 +459,14 @@ h3 {
 	padding: 20px;
 }
 
+.rating_row {
+    display: contents; /* елементи всередині беруть участь в grid батька як раніше */
+}
+
+.rating_meta {
+    display: contents; /* теж прозорий — рік і рейтинг окремі колонки як раніше */
+}
+
 .rating_element_header {
 	grid-column: span 2;
 }
@@ -628,6 +636,65 @@ and (max-device-width : 568px) {
 		font-size: 95%;
 		text-align: left;
 	}
+
+
+    /* .movie_rating {
+        grid-template-columns: min-content auto 1fr;
+    }
+
+    .rating_row {
+        display: contents;
+    }
+
+    .rating_meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rating_meta .rating_element {
+        padding: 8px 10px;
+    } */
+
+
+	.movie_rating {
+		grid-template-columns: min-content auto 1fr;
+		/* скидаємо grid батька — тепер він просто flex колонка */
+		display: flex;
+		flex-direction: column;
+	}
+
+    /* заголовки — окремий grid рядок */
+    .movie_rating > .rating_element_header,
+    .movie_rating > .rating_element_year,
+    .movie_rating > .rating_element_imdb {
+        display: none; /* на мобільному ховаємо заголовки або залишаємо — на твій вибір */
+    }
+
+    /* кожен фільм — свій grid з 3 колонок */
+    .rating_row {
+        display: grid;
+        grid-template-columns: min-content 1fr 1fr;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+	.rating_element {
+		padding: 0;
+	}
+
+    .rating_meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		align-content: stretch;
+    }
+
+    .rating_meta .rating_element {
+		width: 100%;
+		height: 100%;
+        padding: 8px 10px;
+    }
 
 	/* show page */
 
